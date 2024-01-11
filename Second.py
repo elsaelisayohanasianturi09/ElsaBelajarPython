@@ -101,3 +101,8 @@ money = 20000
 print(f"Elsa sedang {activity} {located} seharga Rp{money : ,}")
 print()
 print("Elsa sedang {} {} seharga Rp {:,}".format(activity, located, money))
+
+chocolateBarStock : int = 50
+chocolateBarCount = int(input("Masukkan jumlah yang akan dibeli : "))
+newChocolateBarStock = chocolateBarStock - chocolateBarCount
+print(f"Stok saat ini adalah {newChocolateBarStock} buah")
