@@ -20,3 +20,25 @@ print(food1)
 print(food1.name)
 print(food2.price)
 print(food3.name)
+
+print("==================================")
+class Food :
+    def __init__(self, inputName, inputPrice) :
+        self.name = inputName
+        self.price = inputPrice
+
+food1 = Food("Mie Ayam")
+food1 = Food(12000)
+
+food2 = Food("Bakso")
+food2 = Food(40000)
+
+food3 = Food("Soup")
+food3 = Food(60000)
+
+print(food1.name)
+print(food1.price)
+print(food2.name)
+print(food2.price)
+print(food3.name)
+print(food3.price)
