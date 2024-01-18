@@ -1,3 +1,5 @@
+#Tutorial1
+
 class Food: #Template
     pass
 food1 = Food()
@@ -21,24 +23,40 @@ print(food1.name)
 print(food2.price)
 print(food3.name)
 
+
+#Tutorial3
+
 print("==================================")
 class Food :
-    def __init__(self, inputName, inputPrice) :
+    def __init__(self, inputName, inputPrice, inputStock) :
         self.name = inputName
         self.price = inputPrice
+        self.stock = inputStock
+food1 = Food("Bakso", 12000, 45)
+food2 = Food("Mie Ayam", 10000, 13)
+food3 = Food("Soup", 15000, 34)
 
-food1 = Food("Mie Ayam")
-food1 = Food(12000)
+print(food1.__dict__)
+print(food2.__dict__)
+print(food3.__dict__)
 
-food2 = Food("Bakso")
-food2 = Food(40000)
+#Tutorial4
 
-food3 = Food("Soup")
-food3 = Food(60000)
+print("=====================================")
+class Food :
+    #Class Variabel
+    jumlah = 0
 
-print(food1.name)
-print(food1.price)
-print(food2.name)
-print(food2.price)
-print(food3.name)
-print(food3.price)
+    def __init__(self, inputName, inputPrice, inputStock) :
+        self.name = inputName
+        self.price = inputPrice
+        self.stock = inputStock
+        Food.jumlah += 1
+        print(f"Membuat Food dengan nama {inputName} " )
+
+food1 = Food("Bakso", 12000, 45)
+print(Food.jumlah)
+food2 = Food("Mie Ayam", 10000, 13)
+print(Food.jumlah)
+food3 = Food("Soup", 15000, 34)
+print(Food.jumlah)
