@@ -1,1 +1,0 @@
-print(hero1.health)

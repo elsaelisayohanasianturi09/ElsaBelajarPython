@@ -1,5 +1,5 @@
 class Hero :
-    jumlah_hero = 0
+    jumlahHero = 0
     def __init__(self, inputName, inputHealth, inputPower, inputArmor) :
         self.name = inputName
         self.health = inputHealth
